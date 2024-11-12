@@ -1,1 +1,24 @@
+#include <stdio.h>
 
+// Função para verificar a senha
+int verificar_senha(int senha) {
+    const int senha_correta = 1234;
+    return senha == senha_correta;
+}
+
+int main() {
+    int senha;
+    printf("Dialogo 1.\n");
+    printf("Dialogo 2.\n");
+    printf("A resenha é: 1234");
+    scanf("%d", &senha);
+
+    if (verificar_senha(senha)) {
+        printf("Senha correta!\n");
+        printf("Dialogo de contexto...\n");
+    } else {
+        printf("Senha incorreta!'\n");
+        printf("Mensagem indicando errou ou dicas sla.\n");
+    }
+
+}
