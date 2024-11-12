@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <locale.h>
 #include <stdlib.h>
-#include <time.h>
 
 /*Criação da Matriz:
 Crie uma para armazenar as informações dos produtos:
