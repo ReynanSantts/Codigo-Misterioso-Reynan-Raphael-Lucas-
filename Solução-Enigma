@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <locale.h>
 #include <stdlib.h>
-Falta o --->> //////////////////////////////////////////////////////////////////////////////////////////////////////////// #include <time.h>
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// Falta o --->> #include <time.h>
 
 /*Criação da Matriz:
 Crie uma para armazenar as informações dos produtos:
@@ -35,7 +35,7 @@ int main() {
         printf("Menu de Opções: \n 1 - Exibir Produtos \n 2 - Vender Produtos \n 0 - Sair \n\nDigite a opção desejada: ");
         scanf("%d", &op);
         switch (op) {
-        case 1:
+        caso 1: ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// Correto ---> case 1:
             for (i = 0; i < 10; i++) {
                 printf("ID: %d", matriz[i][0]);
                 if (matriz[i][1] < 3) {
@@ -45,9 +45,9 @@ int main() {
                 }
                 printf("| Valor: %.2f\n", vetor[i]);
             }
-            break;
+            breack; ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// Correto ---> break;
         ///////////////////////////////////////////////////////////////
-        case 2:
+        caso 2: 
             printf("Digite o ID do produto a ser vendido: ");
             scanf("%d", &id);
             printf("Digite a quantidade a ser vendida: ");
