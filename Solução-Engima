@@ -13,7 +13,8 @@ Preço do produto (float).
 float vetor[10]; // vetor de preço (10)
 int matriz[10][2]; // Matriz de ID e Qtd (10x2)
 int i = 0, j = 0;
-int op, id;
+int opção, id; /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// O correto é --> op
+/*Criação da Matriz:
 int qtdv; // quantidade vendida
 float valtotal = 0; // valor total da venda
 
