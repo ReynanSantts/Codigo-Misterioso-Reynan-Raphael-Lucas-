@@ -76,7 +76,7 @@ int main() {
         default:
             printf("Valor inválido.\n");
         }
-    } while (op != 0);
+    } while (op < 0);
 
     return 0;
 }
