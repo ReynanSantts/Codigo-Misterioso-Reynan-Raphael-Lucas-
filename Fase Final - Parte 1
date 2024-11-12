@@ -4,6 +4,7 @@ Huummmmm…ISSO É UMA MATRIZ!!! No baú há uma sequência de números conhecid
 PLAYER - Tem um papel atrás do baú, está escrito “A senha está na posição [5][7]”.
 
 ----------------------------------------------------------------------Copie o código e cole no DevC ou GDB Online----------------------------------------------------------------------------------------------------------------------------
+
 #include <stdio.h>
 #include<time.h>
 #include<stdlib.h>
