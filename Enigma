@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <locale.h>
 #include <stdlib.h>
+#include <time.h>
 
 /*Criação da Matriz:
 Crie uma para armazenar as informações dos produtos:
@@ -18,17 +19,15 @@ float valtotal = 0; // valor total da venda
 
 int main() {
     setlocale(LC_ALL, "portuguese");
+    srand(time(NULL)); // inicializa o gerador de números aleatórios
 
+    // Gera valores aleatórios para os produtos
     for (i = 0; i < 10; i++) {
-        printf("Digite o ID do Produto: ");
-        scanf("%d", &matriz[i][0]);
-        printf("Digite a Quantidade de Produtos: ");
-        scanf("%d", &matriz[i][1]);
+        matriz[i][0] = rand() % 100 + 1; // ID aleatório entre 1 e 100
+        matriz[i][1] = rand() % 20 + 1; // Quantidade aleatória entre 1 e 20
     }
-    printf("\nDigite o Valor dos Produtos: \n");
     for (i = 0; i < 10; i++) {
-        printf("Produto ID:%d QTD:%d Valor: ", matriz[i][0], matriz[i][1]);
-        scanf("%f", &vetor[i]);
+        vetor[i] = (rand() % 10000) / 100.0; // Preço aleatório entre 0.00 e 99.99
     }
 
     do {
